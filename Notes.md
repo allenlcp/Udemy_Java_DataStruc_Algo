@@ -15,7 +15,7 @@ Use worse case better than taking average
 
 ### Big-O
 <table>
-    <tr style="text-align:center;">
+    <tr style="text-align:center;background-color:blue;font-weight:bold;">
         <td colspan="2">Big-O</td>
     </tr>
     <tr>
