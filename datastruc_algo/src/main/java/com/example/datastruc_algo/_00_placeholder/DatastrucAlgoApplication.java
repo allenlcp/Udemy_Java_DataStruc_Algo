@@ -1,4 +1,4 @@
-package com.example.datastruc_algo;
+package com.example.datastruc_algo._00_placeholder;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

@@ -4,7 +4,7 @@
 
 Use worse case better than taking average
 
-### Time complexity
+### Time complexity - allows us to benchmark independent of hardware
 * Number of desired sugars = n
 * Total number of steps = 2n + 2
 * As n grows, the number of steps grows
@@ -15,7 +15,7 @@ Use worse case better than taking average
 
 ### Big-O
 <table>
-    <tr style="text-align:center;background-color:blue;font-weight:bold;">
+    <tr>
         <td colspan="2">Big-O</td>
     </tr>
     <tr>
@@ -41,3 +41,8 @@ Use worse case better than taking average
 </table>
 
 
+###
+
+## Arrays
+* None dynamic data structure - fix in size - done at init
+  * indices are zero based
