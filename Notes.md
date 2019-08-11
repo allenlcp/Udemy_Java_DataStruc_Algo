@@ -14,17 +14,8 @@ Use worse case better than taking average
 
 
 ### Big-O
-|  |  |
-|---|---|
-| O(1) | Constant |
-| O(logn)  | Logarithmic |
-| O(n) | Linear |
-| O(nlogn) | n log-star n |
-| O(n^2) | Quadratic |
-
-
 <table>
-    <tr>
+    <tr style="text-align:center;">
         <td colspan="2">Big-O</td>
     </tr>
     <tr>
