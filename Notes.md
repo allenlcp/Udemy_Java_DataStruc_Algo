@@ -41,9 +41,7 @@ Use worse case better than taking average
 </table>
 
 
-###
-
-## Arrays
+## Arrays in Memory
 * None dynamic data structure 
 * Fix in size - done at initialization
 * Indices are zero based
@@ -58,6 +56,9 @@ Use worse case better than taking average
 
 <img width="300" alt="arrays" src="https://github.com//allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
 
+* Mem start address of 12 is for illustration purposes only
+* For the first element in the array we actually do the same calculation [12 + (0 * 4) = 12].  Actually we use the same formula everywhere.  Therefore, this may explain why array indices are zero based.  If the weren't we would have to subtract one in the formula.
+* int is of size = 4 bytes
 
 
 
