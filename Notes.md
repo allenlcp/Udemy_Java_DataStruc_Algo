@@ -56,13 +56,21 @@ Use worse case better than taking average
 
 <img width="500" alt="arrays" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
 
-
-<img width="300" alt="arrays" src="https://github.com/allenlcp/Udemy_Kafka_Streams/blob/master/resources/images/img_0002.png">
-
-
 * Mem start address of 12 is for illustration purposes only
 * For the first element in the array we actually do the same calculation [12 + (0 * 4) = 12].  Actually we use the same formula everywhere.  Therefore, this may explain why array indices are **zero** based.  If the weren't we would have to subtract one in the formula.
 * int is of size = 4 bytes
+* Arrays really good a retrieving element if we know the index
 
 
 
+
+
+## Arrays and Big-O
+1. Multiple 
+2. Get
+
+<ol type="1">
+  <li>Multiply the size of the element by its index</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
