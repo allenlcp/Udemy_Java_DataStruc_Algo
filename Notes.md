@@ -56,8 +56,7 @@ Use worse case better than taking average
 * If an array starts at memory address x, and the size of each element in the array is y, we can calculate the memory address of the ith element by using the following expression: x + i * y
 * If we know the index of an element, the time to retrieve the element will be the same, no matter where it is in the array
 
-<img width="300" alt="Topics, partitions and offsets" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_0001.png">
-
+<img width="300" alt="Topics, partitions and offsets" src="https://github.com//allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
 
 
 
