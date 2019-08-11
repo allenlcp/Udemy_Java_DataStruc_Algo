@@ -23,12 +23,14 @@ Use worse case better than taking average
 | O(n^2) | Quadratic |
 
 
-|   |   |
-|---|---|
-| O(1) | Constant |
-|   |   |
-|   |   |
-|   |   |
-|   |   |
+<table>
+  <tr>
+    <td>One</td>
+    <td>Two</td>
+  </tr>
+  <tr>
+    <td colspan="2">Three</td>
+  </tr>
+</table>
 
 
