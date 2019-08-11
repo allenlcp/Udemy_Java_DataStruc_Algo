@@ -14,23 +14,27 @@ Use worse case better than taking average
 
 
 ### Big-O
-|  |  |
-|---|---|
-| O(1) | Constant |
-| O(logn)  | Logarithmic |
-| O(n) | Linear |
-| O(nlogn) | n log-star n |
-| O(n^2) | Quadratic |
-
-
 <table>
-  <tr>
-    <td>One</td>
-    <td>Two</td>
-  </tr>
-  <tr>
-    <td colspan="2">Three</td>
-  </tr>
+    <tr>
+        <td>O(1)</td>
+        <td>Constant</td>
+    </tr>
+    <tr>
+        <td>O(logn)</td>
+        <td>Logarithmic</td>
+    </tr>
+    <tr>
+        <td>O(n)</td>
+        <td>Linear</td>
+    </tr>
+    <tr>
+        <td>O(nlogn)</td>
+        <td>n log-star n</td>
+    </tr>
+    <tr>
+        <td>O(n^2)</td>
+        <td>Quadratic</td>
+    </tr>
 </table>
 
 
