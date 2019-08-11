@@ -14,7 +14,7 @@ Use worse case better than taking average
 
 
 ### Big-O
-| Big-O |
+|  |  |
 |---|---|
 | O(1) | Constant |
 | O(logn)  | Logarithmic |
@@ -22,5 +22,13 @@ Use worse case better than taking average
 | O(nlogn) | n log-star n |
 | O(n^2) | Quadratic |
 
+
+|   |   |
+|---|---|
+| O(1) | Constant |
+|   |   |
+|   |   |
+|   |   |
+|   |   |
 
 
