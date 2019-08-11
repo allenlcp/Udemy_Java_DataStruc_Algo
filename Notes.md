@@ -65,12 +65,21 @@ Use worse case better than taking average
 
 
 
-## Arrays and Big-O
-1. Multiple 
-2. Get
+## Arrays and Big-O notation
 
-<ol type="1">
-  <li>Multiply the size of the element by its index</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ol>
+### Retrieve an Element from an Array
+1. Multiply the size of the element by its index
+2. Get the start address of the array
+3. Add the start address to the result of the multiplication
+
+### Retrieve an Element from an Array - when we know the index
+* Therefore it doesn't matter how big is the array, we **only** have these 3 steps to find the element.  The steps to retrieve never changes. We therefore have **constant time complexity O(1)** - means as the number of item increases, the algorithm does not degrade.
+
+### Retrieve an Element from an Array - when we do NOT know the index
+* We will need to loop through the array to find element but we need to consider the worse case scenario for big-o, therefore we will assume that we will have to loop through the entire array.  As such the big-o notation is **O(n)**.
+
+
+<img width="500" alt="arrays" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_002.png">
+
+
+

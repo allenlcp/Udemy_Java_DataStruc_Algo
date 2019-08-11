@@ -27,6 +27,14 @@ public class ArraysMain implements CommandLineRunner {
             System.out.println(intArray[i]);
         }
 
+        int index = -1;
+        for(int i=0; i < intArray.length; i++){
+            if (intArray[i] == 7){
+                index = i;
+                break;
+            };
+        }
+        System.out.println("index = " + index);
 
 	}
 }
