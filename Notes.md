@@ -64,7 +64,8 @@ ___
   <img width="350" alt="arrays" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
 </kbd>
 
-* Mem start address of 12 is for illustration purposes only
+
+* Memory start address of 12 is for illustration purposes only
 * For the first element in the array we actually do the same calculation [12 + (0 * 4) = 12].  Actually we use the same formula everywhere.  Therefore, this may explain why array indices are **zero** based.  If the weren't we would have to subtract one in the formula.
 * int is of size = 4 bytes
 * Arrays really good a retrieving element if we know the index
@@ -92,14 +93,12 @@ ___
 
 # Sort Algorithms
 
-
 ### Stable vs Unstable sort algo
 Comes into play when there are duplicate values in the data to be sorted.
 Question - will the original ordering be preserved after sorting. i.e will the white 9 come before the black 9
 
 * **unstable sort** - original ordering will **not** be preserved
 * **stable sort** - original ordering will be preserved (all this equal, this one is preferred)
-
 
 <table>
     <tr>
@@ -133,14 +132,11 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 </kbd>
 
 
-
 * Performance degrades as n increases
 * We do multiple traversal for the sort
   * we find the biggest number first and put it at index 6 and it's part of the sortedPartition 
   * we then re-start over again to sort for the unsortedPartition (i.e index 0 to 5) which will result having the second largest number set at index 6
   * etc... etc...
-
-
 
 
 ### Select sort 
