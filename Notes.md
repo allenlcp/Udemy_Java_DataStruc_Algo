@@ -60,8 +60,8 @@ ___
 * If an array starts at memory address x, and the size of each element in the array is y, we can calculate the memory address of the ith element by using the following expression: x + i * y
 * If we know the index of an element, the time to retrieve the element will be the same, no matter where it is in the array
 
-<p align="center">
-    <img width="500" alt="arrays" border="1" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
+<p align="center" border="1" >
+    <img width="400" alt="arrays" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
 </p>
 
 * Mem start address of 12 is for illustration purposes only
@@ -82,8 +82,8 @@ ___
 ### Retrieve an Element from an Array - when we do NOT know the index
 * We will need to loop through the array to find element but we need to consider the worse case scenario for big-o, therefore we will assume that we will have to loop through the entire array.  As such the big-o notation is **O(n)**.
 
-<p align="center">
-    <img width="700" alt="array big-o" border="1" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_002.png">
+<p align="center" border="1" >
+    <img width="700" alt="array big-o" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_002.png">
 </p>
 
 * **Add an element to a full array** - we will have to create a new array and loop through existing array from start to finish and copy to the new array before adding the new element.
@@ -127,8 +127,8 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 * Least efficient sorting algo
 * Is a stable sort - we only swap if the elements a different
 
-<p align="center">
-    <img width="300" alt="bubble sort" border="1" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
+<p align="center" border="1" >
+    <img width="400" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
 </p>
 
 
