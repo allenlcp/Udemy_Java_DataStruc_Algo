@@ -122,6 +122,15 @@ Question - will the original ordering be preserved after sorting. i.e will the w
   * 10,000 steps to sort 100 items, 
   * 1,000,000 steps to sort 1000 items
   * but it's **not exactly true** as the sorted partition is growing there is less sorting to do (for the inner loop). However, we are not looking for exact number, we trying a general sense (approximation) on how the number of step grows as the item grows.  
+
+<table>
+    <tr>
+        <td>
+            <img width="300" alt="unstable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
+        </td>
+    </tr>
+</table>
+
 * Algo degrades quickly
 * Least efficient sorting algo
 * Is a stable sort - we only swap if the elements a different
