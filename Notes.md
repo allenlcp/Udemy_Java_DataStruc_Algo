@@ -61,7 +61,7 @@ ___
 * If we know the index of an element, the time to retrieve the element will be the same, no matter where it is in the array
 
 <p align="center">
-    <img width="300" alt="arrays" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
+    <img width="500" alt="arrays" border="1" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
 </p>
 
 * Mem start address of 12 is for illustration purposes only
@@ -83,7 +83,7 @@ ___
 * We will need to loop through the array to find element but we need to consider the worse case scenario for big-o, therefore we will assume that we will have to loop through the entire array.  As such the big-o notation is **O(n)**.
 
 <p align="center">
-    <img style="float: center;" width="700" alt="array big-o" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_002.png">
+    <img width="700" alt="array big-o" border="1" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_002.png">
 </p>
 
 * **Add an element to a full array** - we will have to create a new array and loop through existing array from start to finish and copy to the new array before adding the new element.
@@ -100,21 +100,21 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 * **unstable sort** - original ordering will **not** be preserved
 * **stable sort** - original ordering will be preserved (all this equal, this one is preferred)
 
-<p align="center">
-    <table>
-        <tr>
-            <td>
-                <img width="300" alt="unstable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_004.png">
-            </td>
-            <td>
-                vs
-            </td>
-            <td>
-                <img width="300" alt="stable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_005.png">
-            </td>
-        </tr>
-    </table>
-</p>
+
+<table>
+    <tr>
+        <td>
+            <img width="300" alt="unstable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_004.png">
+        </td>
+        <td>
+            vs
+        </td>
+        <td>
+            <img width="300" alt="stable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_005.png">
+        </td>
+    </tr>
+</table>
+
 
 ### Bubble sort (because the larger/smaller/etc number will bubble to the top - depending on implementation)
 * **In-place algorithm** - logically partitioning array, no need to create new array for sorting.  However in the implementation we create a few local variables.  It is an in place algo if the extra memory that you need does not depend on the item you are sorting. i.e additional memory for processing will not increase with an the size of the array
@@ -128,7 +128,7 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 * Is a stable sort - we only swap if the elements a different
 
 <p align="center">
-    <img style="float: center;" width="300" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
+    <img width="300" alt="bubble sort" border="1" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
 </p>
 
 
