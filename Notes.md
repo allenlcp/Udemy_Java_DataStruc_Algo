@@ -17,7 +17,7 @@ Use worse case better than taking average
   * Two loops is nxn -> quadratic
 
 ### Big-O
-<table>
+<table style="width:100%">
     <tr>
         <td colspan="2">Big-O</td>
     </tr>
@@ -99,7 +99,7 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 * **stable sort** - original ordering will be preserved (all this equal, this one is preferred)
 
 
-<table>
+<table border="1">
     <tr>
         <td>
             <img width="300" alt="unstable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_004.png">
@@ -140,5 +140,6 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 
 
 ### Select sort 
-
-  <img width="400" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
+<kbd>
+    <img width="400" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
+</kbd>
