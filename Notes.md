@@ -60,9 +60,7 @@ ___
 * If an array starts at memory address x, and the size of each element in the array is y, we can calculate the memory address of the ith element by using the following expression: x + i * y
 * If we know the index of an element, the time to retrieve the element will be the same, no matter where it is in the array
 
-<p align="center" border="1" >
-    <img width="400" alt="arrays" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
-</p>
+  <img width="350" alt="arrays" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
 
 * Mem start address of 12 is for illustration purposes only
 * For the first element in the array we actually do the same calculation [12 + (0 * 4) = 12].  Actually we use the same formula everywhere.  Therefore, this may explain why array indices are **zero** based.  If the weren't we would have to subtract one in the formula.
@@ -82,7 +80,7 @@ ___
 ### Retrieve an Element from an Array - when we do NOT know the index
 * We will need to loop through the array to find element but we need to consider the worse case scenario for big-o, therefore we will assume that we will have to loop through the entire array.  As such the big-o notation is **O(n)**.
 
-<p align="center" border="1" >
+<p align="center">
     <img width="700" alt="array big-o" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_002.png">
 </p>
 
@@ -127,9 +125,9 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 * Least efficient sorting algo
 * Is a stable sort - we only swap if the elements a different
 
-<p align="center" border="1" >
-    <img width="400" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
-</p>
+
+* <img width="400" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
+
 
 
 * Performance degrades as n increases
@@ -142,3 +140,5 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 
 
 ### Select sort 
+
+    <img width="400" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
