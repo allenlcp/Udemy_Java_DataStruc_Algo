@@ -59,10 +59,14 @@ ___
   * What about objects like String and etc - will it grow in size as the object grows - **NO**, because java stores the **object reference** (which are always the same size regardless of the type of object being reference)
 * If an array starts at memory address x, and the size of each element in the array is y, we can calculate the memory address of the ith element by using the following expression: x + i * y
 * If we know the index of an element, the time to retrieve the element will be the same, no matter where it is in the array
-
-<kbd>
-  <img width="350" alt="arrays" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
-</kbd>
+ 
+<table>
+    <tr>
+        <td>
+            <img width="350" alt="arrays" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
+        </td>
+    </tr>
+</table>
 
 
 * Memory start address of 12 is for illustration purposes only
@@ -123,22 +127,18 @@ Question - will the original ordering be preserved after sorting. i.e will the w
   * 1,000,000 steps to sort 1000 items
   * but it's **not exactly true** as the sorted partition is growing there is less sorting to do (for the inner loop). However, we are not looking for exact number, we trying a general sense (approximation) on how the number of step grows as the item grows.  
 
-<table>
-    <tr>
-        <td>
-            <img width="300" alt="unstable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
-        </td>
-    </tr>
-</table>
-
 * Algo degrades quickly
 * Least efficient sorting algo
 * Is a stable sort - we only swap if the elements a different
 
 
-<kbd>
-    <img width="400" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
-</kbd>
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
+        </td>
+    </tr>
+</table>
 
 
 * Performance degrades as n increases
@@ -149,6 +149,3 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 
 
 ### Select sort 
-<kbd>
-    <img width="400" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
-</kbd>
