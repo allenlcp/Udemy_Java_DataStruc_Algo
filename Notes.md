@@ -60,7 +60,7 @@ ___
 * If an array starts at memory address x, and the size of each element in the array is y, we can calculate the memory address of the ith element by using the following expression: x + i * y
 * If we know the index of an element, the time to retrieve the element will be the same, no matter where it is in the array
 
-<img width="300" alt="arrays" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
+* <img width="300" alt="arrays" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_001.png">
 
 * Mem start address of 12 is for illustration purposes only
 * For the first element in the array we actually do the same calculation [12 + (0 * 4) = 12].  Actually we use the same formula everywhere.  Therefore, this may explain why array indices are **zero** based.  If the weren't we would have to subtract one in the formula.
@@ -80,7 +80,7 @@ ___
 ### Retrieve an Element from an Array - when we do NOT know the index
 * We will need to loop through the array to find element but we need to consider the worse case scenario for big-o, therefore we will assume that we will have to loop through the entire array.  As such the big-o notation is **O(n)**.
 
-<img width="700" alt="array big-o" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_002.png">
+* <img width="700" alt="array big-o" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_002.png">
 
 * **Add an element to a full array** - we will have to create a new array and loop through existing array from start to finish and copy to the new array before adding the new element.
 
@@ -99,10 +99,13 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 <table>
     <tr>
         <td>
-            <img width="200" alt="unstable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_004.png">
+            <img width="300" alt="unstable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_004.png">
         </td>
         <td>
-            <img width="200" alt="stable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_005.png">
+            vs
+        </td>
+        <td>
+            <img width="300" alt="stable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_005.png">
         </td>
     </tr>
 </table>
@@ -119,7 +122,7 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 * Least efficient sorting algo
 * Is a stable sort - we only swap if the elements a different
 
-<img width="300" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
+* <img width="300" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
 
 
 * Performance degrades as n increases
