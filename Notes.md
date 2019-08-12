@@ -141,4 +141,4 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 
 ### Select sort 
 
-    <img width="400" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
+  <img width="400" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
