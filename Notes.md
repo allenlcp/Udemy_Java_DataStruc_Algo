@@ -42,9 +42,11 @@ Use worse case better than taking average
         <td>Quadratic</td>
     </tr>
 </table>
+
 ___
 
 # Arrays
+
 ## Arrays in Memory
 * None dynamic data structure 
 * Fix in size - done at initialization
@@ -94,9 +96,16 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 * **unstable sort** - original ordering will **not** be preserved
 * **stable sort** - original ordering will be preserved (all this equal, this one is preferred)
 
-<img width="400" alt="unstable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_004.png">
-
-<img width="400" alt="stable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_005.png">
+<table>
+    <tr>
+        <td>
+            <img width="200" alt="unstable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_004.png">
+        </td>
+        <td>
+            <img width="200" alt="stable sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_005.png">
+        </td>
+    </tr>
+</table>
 
 
 ### Bubble sort (because the larger/smaller/etc number will bubble to the top - depending on implementation)
@@ -110,7 +119,7 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 * Least efficient sorting algo
 * Is a stable sort - we only swap if the elements a different
 
-<img width="500" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
+<img width="300" alt="bubble sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_003.png">
 
 
 * Performance degrades as n increases
