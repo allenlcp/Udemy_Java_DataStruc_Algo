@@ -149,3 +149,8 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 
 
 ### Select sort 
+* In-place algorithm
+* O(n^2) time complexity - quadratic
+* It will take 100 steps to sort 10 items, 10,000 steps to sort 100 items, 1,000,000 steps to sort 1000 items
+* Doesn't require as much swapping as bubble sort
+* Unstable algorithm

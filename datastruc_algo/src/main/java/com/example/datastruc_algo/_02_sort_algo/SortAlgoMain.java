@@ -37,6 +37,12 @@ public class SortAlgoMain implements CommandLineRunner {
         System.out.println("BubbleSort -> " + Arrays.toString(intArray));
     }
 
+    private void runSelectionSort() {
+	    
+    }
+
+
+
     // Swap method
     private void swap(int[] array, int i, int j){
 	    if (i == j){ return; } // If same, no need to swap - make sort stables
