@@ -253,9 +253,72 @@ and etc....
 
 ### Small timeout for reviewing Recursion (eg factorial)
 
+* Recursive call is in sequential order but return in reverse
+* Need a break case or default condition, otherwise we will get a stack overflow error
+* But event with default condition, the recursion can still blowup the stack if it calls itself too often (solution in other languages is tail recursion - not applicable in java)
+* The iterative implementation runs faster and it does not need a lot of memory
+* Recursion needs more memory in the call stack
 
 
 
 
 
 
+
+
+
+
+
+### 5. Merge sort - overall
+* Divide and conquer algorithm
+* Recursive algo
+* Two phases: Splitting and Merging
+* Splitting phase leads to faster sorting during the Merging phase
+* Splitting is logical.  We don't create new arrays
+
+
+### 5. Merge sort - splitting phase
+* Start with an unsorted array
+* Divide the array into two arrays (depending on implementation, for odd arrays, one will have one more element than the other), which are unsorted.  The first array is left array, and the second array is the right array
+* Split the left and right arrays into two arrays each
+* Keep splitting until all the arrays have only one element each - these arrays are sorted
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="merge sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_013.png">
+        </td>
+    </tr>
+</table> 
+
+### 5. Merge sort - merging phase
+* Merge every left/right pair of sibling arrays into a sorted array
+* After the first merge, we'll have a bunch of 2-element sorted arrays
+* Then merge those sorted arrays (left/right siblings) to end up with a bunch of 4-element sorted arrays
+* Repeat until you have single sorted array
+* Not in-place.  Use temporary arrays
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="merge sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_014.png">
+        </td>
+    </tr>
+</table> 
+
+
+### 5. Merge sort - merging process
+* We merge sibling left and right arrays
+* We create a temporary array large enough to hold all the elements in the arrays we're merging
+* We set i to the first index of the left array, and j to the first index of the right array
+* We compare left[i] to right[j].  If left is smaller, we copy it to the temp array and increment i by i.  If right is smaller, we copy it to the temp array and increment j by 1
+* We repeat this process until all elements in the two arrays have been processed
+* At this point, the temporary array contains the merged values in sorted order
+* We then copy this temporary array back to the original input array, at the correct positions
+* If the left array is at positions x to y, and the right array is at positions y+1 to z, then after the copy, positions x to z will be sorted in the original array
+
+
+### 5. Merge sort 
+* NOT an in-place algorithm (the splitting phase is in place but at merging we use temporary arrays)
+* O(nlogn) - base 2.  We're repeatedly dividing the array in half during the splitting phase
+* Stable algorithm
