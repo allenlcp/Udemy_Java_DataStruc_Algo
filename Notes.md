@@ -181,6 +181,80 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 * Stable algorithm
 
 
+### 4. Shell sort
+
+* Variation of insertion sort
+* Insertion sort chooses which element to insert using a gap of 1
+* Shell sort starts out using a larger gap value
+* As the algorithm runs, the gaps is reduced
+* Goal is to reduce the amount of shifting required
+
+* As the algo progresses, the gap is reduced
+* The last gap value is always 1
+* A gap value of 1 is equivalent to insertion sort
+* So, the algo does some preliminary work (using gap values greater than 1), and then becomes insertion sort
+* By the time we get to insertion sort, the array has partially sorted, so there's less shifting required
+
+* Calculation/selection of the gap value can influence the time complexity - see wiki for some examples
+
+* Common sequence used for gap/interval value is the "Knuth sequence"
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="shell sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_008.png">
+        </td>
+    </tr>
+</table>
+
+* Gap is calculated using (3^k - 1)/2
+* We set "k" based on the length of the array
+* We want the gap to be as close as possible to the length of the array we want to sort, without being greated than the length
+
+Simplified implementation example:
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="shell sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_009.png">
+        </td>
+    </tr>
+</table> 
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="shell sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_010.png">
+        </td>
+    </tr>
+</table> 
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="shell sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_011.png">
+        </td>
+    </tr>
+</table> 
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="shell sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_012.png">
+        </td>
+    </tr>
+</table> 
+
+and etc....
+
+* In-place algorithm
+* Difficult to nail down the time complexity because it will depend on the gap. Worse case: O(n^2), but it can perform much better than that
+* Doesn't require as much shifting as insertion sort, so it usually performs better
+* Unstable algorithm
+
+
+
+
+### Small timeout for reviewing Recursion (eg factorial)
+
+
+
 
 
 
