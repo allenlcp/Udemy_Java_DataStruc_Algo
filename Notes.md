@@ -148,12 +148,13 @@ Question - will the original ordering be preserved after sorting. i.e will the w
   * etc... etc...
 
 
-### 2. Select sort 
+### 2. Selection sort 
+* It's is called the selection sort because on each traversal, we are selecting the largest element and we are moving it to the sorted partition
+
 * In-place algorithm
 * O(n^2) time complexity - quadratic
 * It will take 100 steps to sort 10 items, 10,000 steps to sort 100 items, 1,000,000 steps to sort 1000 items
-* Doesn't require as much swapping as bubble sort
-* Unstable algorithm
+* Doesn't require as much swapping as bubble sort (therefore perform better)
 
 <table>
     <tr>
@@ -170,3 +171,17 @@ Question - will the original ordering be preserved after sorting. i.e will the w
         </td>
     </tr>
 </table>
+
+
+### 3. Insertion sort (traverse from left to right for unsorted but compare right to left for sorted partition)
+
+* In-place algorithm
+* O(n^2) time complexity - quadratic
+* It will take 100 steps to sort 10 items, 10,000 steps to sort 100 items, 1,000,000 steps to sort 1000 items
+* Stable algorithm
+
+
+
+
+
+

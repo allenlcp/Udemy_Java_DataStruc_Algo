@@ -19,8 +19,9 @@ public class SortAlgoMain implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) throws Exception {
-        runBubbleSort();
-
+//        runBubbleSort();
+//        runSelectionSort();
+        runInsertionSort();
 	}
 
     private void runBubbleSort() {
@@ -38,9 +39,42 @@ public class SortAlgoMain implements CommandLineRunner {
     }
 
     private void runSelectionSort() {
-	    
+        int[] intArray = {20 ,35, -15, 7, 55, 1, -22};
+
+        for(int lastUnsortedIndex=intArray.length-1; lastUnsortedIndex > 0; lastUnsortedIndex--){
+            int largest = 0;
+
+            for(int i=1; i <= lastUnsortedIndex;i++){
+                if(intArray[i] > intArray[largest]){
+                    largest = i;
+                }
+            }
+
+            swap(intArray, largest, lastUnsortedIndex);
+        }
+
+        System.out.println("BubbleSort -> " + Arrays.toString(intArray));
     }
 
+    private void runInsertionSort() {
+        int[] intArray = {20 ,35, -15, 7, 55, 1, -22};
+
+        for(int firstUnsorted=1; firstUnsorted < intArray.length; firstUnsorted++){
+            int newElement = intArray[firstUnsorted];
+
+            int i;
+
+            for(i=firstUnsorted; i > 0 && intArray[i-1] > newElement; i--){
+                intArray[i] = intArray[i-1];
+            }
+
+            intArray[i] = newElement;
+
+        }
+
+        System.out.println("InsertionSort -> " + Arrays.toString(intArray));
+
+    }
 
 
     // Swap method
