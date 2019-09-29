@@ -154,3 +154,19 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 * It will take 100 steps to sort 10 items, 10,000 steps to sort 100 items, 1,000,000 steps to sort 1000 items
 * Doesn't require as much swapping as bubble sort
 * Unstable algorithm
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="select sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_006.png">
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="select sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_007.png">
+        </td>
+    </tr>
+</table>
