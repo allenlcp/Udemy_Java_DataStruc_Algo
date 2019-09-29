@@ -263,13 +263,7 @@ and etc....
 
 
 
-
-
-
-
-
-
-### 5. Merge sort - overall
+### 5.1 Merge sort - overall
 * Divide and conquer algorithm
 * Recursive algo
 * Two phases: Splitting and Merging
@@ -277,7 +271,7 @@ and etc....
 * Splitting is logical.  We don't create new arrays
 
 
-### 5. Merge sort - splitting phase
+### 5.2 Merge sort - splitting phase
 * Start with an unsorted array
 * Divide the array into two arrays (depending on implementation, for odd arrays, one will have one more element than the other), which are unsorted.  The first array is left array, and the second array is the right array
 * Split the left and right arrays into two arrays each
@@ -291,7 +285,7 @@ and etc....
     </tr>
 </table> 
 
-### 5. Merge sort - merging phase
+### 5.3 Merge sort - merging phase
 * Merge every left/right pair of sibling arrays into a sorted array
 * After the first merge, we'll have a bunch of 2-element sorted arrays
 * Then merge those sorted arrays (left/right siblings) to end up with a bunch of 4-element sorted arrays
@@ -307,7 +301,7 @@ and etc....
 </table> 
 
 
-### 5. Merge sort - merging process
+### 5.4 Merge sort - merging process
 * We merge sibling left and right arrays
 * We create a temporary array large enough to hold all the elements in the arrays we're merging
 * We set i to the first index of the left array, and j to the first index of the right array
@@ -318,7 +312,19 @@ and etc....
 * If the left array is at positions x to y, and the right array is at positions y+1 to z, then after the copy, positions x to z will be sorted in the original array
 
 
-### 5. Merge sort 
-* NOT an in-place algorithm (the splitting phase is in place but at merging we use temporary arrays)
+### 5.5 Merge sort 
+* NOT an in-place algorithm (the splitting phase is in place but at merging we use temporary arrays - however with cheap memory nowadays, shouldn't dissuade from using it)
 * O(nlogn) - base 2.  We're repeatedly dividing the array in half during the splitting phase
 * Stable algorithm
+
+
+
+### 6. Quick sort 
+* Divide and conquer algorithm
+* Recursive algorithm
+* Uses a pivot element to partition the array into two parts
+* Elements < pivot to its left, elements > pivot to its right
+* Pivot will then be in its correct sorted position
+
+
+
