@@ -119,7 +119,7 @@ Question - will the original ordering be preserved after sorting. i.e will the w
 </table>
 
 
-### Bubble sort (because the larger/smaller/etc number will bubble to the top - depending on implementation)
+### 1. Bubble sort (because the larger/smaller/etc number will bubble to the top - depending on implementation)
 * **In-place algorithm** - logically partitioning array, no need to create new array for sorting.  However in the implementation we create a few local variables.  It is an in place algo if the extra memory that you need does not depend on the item you are sorting. i.e additional memory for processing will not increase with an the size of the array
 * O(n^2) time complexity - **quadratic**, meaning itt will take:
   * 100 step to sort 10 items, 
@@ -148,7 +148,7 @@ Question - will the original ordering be preserved after sorting. i.e will the w
   * etc... etc...
 
 
-### Select sort 
+### 2. Select sort 
 * In-place algorithm
 * O(n^2) time complexity - quadratic
 * It will take 100 steps to sort 10 items, 10,000 steps to sort 100 items, 1,000,000 steps to sort 1000 items
