@@ -325,6 +325,35 @@ and etc....
 * Uses a pivot element to partition the array into two parts
 * Elements < pivot to its left, elements > pivot to its right
 * Pivot will then be in its correct sorted position
+* In-place algo
+* O(nlogn) - base 2. We're repeatedly partitioning the array into two halves
+* Unstable algo
 
 
+### 7. Counting sort 
+* Makes assumptions about the data
+* Doesn't use comparisons
+* Counts the number of occurrences of each value
+* Only works with non-negative discrete values (can't work with floats, strings)
+* Values must be within a specific range
 
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="counting sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_015.png">
+        </td>
+    </tr>
+</table> 
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="counting sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_016.png">
+        </td>
+    </tr>
+</table> 
+
+* NOT an in-place algo
+* O(n) can achieve this because we're making assumptions about the data we're sorting
+* If we want the sort to be stable, we have to so do some extra steps
+* Algo better when input is pretty much the same size of the counting array
