@@ -356,4 +356,120 @@ and etc....
 * NOT an in-place algo
 * O(n) can achieve this because we're making assumptions about the data we're sorting
 * If we want the sort to be stable, we have to so do some extra steps
-* Algo better when input is pretty much the same size of the counting array
+* Algo better when input is pretty much the same size of the counting array (range)
+
+
+### 8. Radix Sort
+* Makes assumption about the data
+* Data must have the same radix and width
+
+* Radix
+* - In mathematical numeral systems, the radix or base is the number of unique digits, including zero, used to represent numbers in a positional numeral system. For example, for the decimal system the radix is ten, because it uses the ten digits from 0 through 9. 
+* - For alphabet it's 26 (ie a-z) 
+
+* Width - number of digits per letters e.g
+* - HELLO -> width of 5
+* - 10 -> width of 2
+
+* Because of this, data must be integers or strings
+* Sort based on each individual digit or letter position
+* Start at the rightmost position
+* Must use a stable sort algo at each stage (very important)
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="radix sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_017.png">
+        </td>
+    </tr>
+</table> 
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="radix sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_018.png">
+        </td>
+    </tr>
+</table> 
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="radix sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_019.png">
+        </td>
+    </tr>
+</table> 
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="radix sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_020.png">
+        </td>
+    </tr>
+</table>
+
+* Counting sort is often used as the sort algo for the radix sort - must be stable counting sort
+* O(n) - can achieve this because we're making assumptions about the data we're sorting
+* Even so, it often runs slower than O(nlogn) algo because of the overhead involved
+* In-place depends on which sort algo you use
+* Stable algo
+
+### 9. Stable Counting Sort
+* Required extra steps
+* Can calculate where values should be written black to the original array
+* Writing the values into the array in backwards order ensures stability
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="stable counting sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_021.png">
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="stable counting sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_022.png">
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="stable counting sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_023.png">
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="stable counting sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_024.png">
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="stable counting sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_025.png">
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td>
+            <img width="400" alt="stable counting sort" src="https://github.com/allenlcp/Udemy_Java_DataStruc_Algo/blob/master/resources/images/img_026.png">
+        </td>
+    </tr>
+</table>
+
+* This works because we traverse the input array from right to left, and we write duplicate values into temp array from right to left
+* If we know that duplicate values will go into 3 and 4, we write the rightmost value in the input array into position 4, and the leftmost value into position 3
+* This preserves the relative positioning of duplicate values
+* By adjusting the counting array after the initial pass, we can map values to indices in the temp array
+* Can also use linked lists to make counting sort stable
+
