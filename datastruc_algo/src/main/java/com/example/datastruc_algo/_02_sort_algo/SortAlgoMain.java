@@ -271,12 +271,50 @@ public class SortAlgoMain implements CommandLineRunner {
     }
 
     private void runRadixSort() {
-        int[] intArray = {2, 5, 9, 8, 2, 8, 7, 10, 4, 3};
+        int[] radixArray = {4725, 4586, 1330, 8792, 1594, 5729};
 
-        countingSort(intArray, 0, intArray.length);
+        radixSort(radixArray, 10, 4);
 
-        System.out.println("CountingSort -> " + Arrays.toString(intArray));
+        System.out.println("CountingSort -> " + Arrays.toString(radixArray));
     }
+
+    public void radixSort(int[] input, int radix, int width){
+	    for(int i=0; i < width; i++){
+	        radixSingleSort(input, i, radix);
+        }
+    }
+
+    public void radixSingleSort(int[] input, int position, int radix){
+	    int numItems = input.length;
+
+	    int[] countArray = new int[radix];
+
+	    // Contains raw count
+	    for(int value: input){
+	        countArray[getDigit(position, value, radix)]++;
+        }
+
+	    // Adjust count array
+	    for(int j=1; j < radix; j++){
+	        countArray[j] += countArray[j-1];
+        }
+
+	    // tempIndex is k in the slides
+	    int[] temp = new int[numItems];
+	    for(int tempIndex = numItems - 1; tempIndex >=0; tempIndex--){
+	        temp[--countArray[getDigit(position, input[tempIndex], radix)]] = input[tempIndex];
+        }
+
+	    for(int tempIndex = 0; tempIndex < numItems; tempIndex++){
+	        input[tempIndex] = temp[tempIndex];
+        }
+
+    }
+
+    public int getDigit(int position, int value, int radix){
+	    return ((value / (int) Math.pow(radix, position)) % radix);
+    }
+
 
 
     private int runRecursiveFactorial(int num){
