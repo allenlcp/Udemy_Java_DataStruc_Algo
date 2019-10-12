@@ -476,3 +476,11 @@ and etc....
 ___
 
 ## Sorting Arrays Using the JDK
+* JDK already implement those sort algo
+___
+
+## List
+
+
+___
+
