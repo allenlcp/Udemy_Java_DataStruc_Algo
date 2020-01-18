@@ -480,6 +480,13 @@ ___
 ___
 
 ## List
+Is an ordered collection (also known as a sequence)
+
+### Abstract Data Type
+* Doesn't indicate how the data is organised
+* Dictates the operations you can perform
+* Concrete data structure is usually a concrete class
+* Abstract data type is usually an interface
 
 
 ___
